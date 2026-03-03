@@ -5,6 +5,26 @@ Network+ aligned NOC infrastructure simulation with VLAN design, device monitori
 This project simulates a Network Operations Center (NOC) environment for Horizon Freight Logistics.It models real-time infrastructure monitoring, VLAN segmentation, incident tracking, and root cause analysis in a small enterprise network.
 
 ---
+## Architecture Summary
+
+Enterprise NetOps simulation for a logistics company network.
+Environment Includes:
+
+• Multi-site enterprise network (HQ + Warehouse branch)  
+• Fortinet edge firewall with VPN connectivity  
+• Core switching with inter-VLAN routing  
+• Segmented VLAN architecture  
+• Centralized IP addressing and DHCP scopes  
+• Network Operations Center (NOC) incident management platform  
+
+Core Technologies Simulated:
+
+• VLAN segmentation  
+• Subnetting and IP management  
+• Firewall security policies  
+• VPN connectivity  
+• Incident response workflows  
+• Network monitoring and operational metrics
 
 ## 🏢 Environment Overview
 
