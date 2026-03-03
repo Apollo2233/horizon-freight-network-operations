@@ -7,13 +7,19 @@ This project simulates a Network Operations Center (NOC) environment for Horizon
 ---
 
 ## 🏢 Environment Overview
-- 1 Headquarters Office
-- 1 Warehouse Network
-- Remote Users via VPN
-- Fortinet Edge Firewall
-- Core & Access Layer Switching
-- Domain Controller (AD/DNS/DHCP)
-- Segmented VLAN Architecture
+
+The Horizon Freight NetOps environment simulates a small enterprise logistics network supporting headquarters operations, warehouse connectivity, and remote workforce access.
+Infrastructure Components:
+
+• Headquarters Office Network  
+• Warehouse Branch Network  
+• Remote Users via VPN  
+• Fortinet Edge Firewall (FortiGate Series)  
+• Core & Access Layer Switching (Cisco Catalyst)  
+• Domain Controller (Active Directory / DNS / DHCP)  
+• Segmented VLAN Architecture  
+• Centralized IP Address & VLAN Management  
+• Network Operations Center (NOC) Incident Management Platform  
 
 ---
 
