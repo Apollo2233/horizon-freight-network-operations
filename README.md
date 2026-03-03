@@ -106,7 +106,13 @@ Remote users securely access internal services through a **VPN connection termin
 - Device uptime tracking
 - VLAN distribution analytics
 - Top devices by incident frequency
+## NOC Monitoring Dashboard
 
+The Network Operations Center dashboard provides a centralized view of infrastructure health, active incidents, and operational metrics across the Horizon Freight environment.
+
+Network engineers use this dashboard to monitor device uptime, identify potential issues, and track incident response activity in real time.
+
+![NOC Dashboard](screenshots/noc-dashboard.png)
 ---
 
 ## 🚨 Incident Simulation Model
