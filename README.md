@@ -46,6 +46,11 @@ The following diagram represents the simulated enterprise network architecture u
 ---
 
 ## 🚨 Incident Simulation Model
+## Incident Management Example
+
+The NOC platform allows incidents to be reported, categorized by OSI layer, and tracked through investigation and resolution.
+
+![Incident Queue](screenshots/incident-queue.png)
 The environment supports simulated incidents including:
 - VPN instability
 - DHCP scope exhaustion
