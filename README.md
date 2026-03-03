@@ -46,6 +46,32 @@ The following diagram represents the simulated enterprise network architecture u
 ---
 
 ## 🚨 Incident Simulation Model
+## Sample Incident Investigation
+
+Example: Slow Network Performance – VLAN 10 (Corporate Users)
+
+Incident ID: NET-0009  
+Severity: Medium  
+Status: Open  
+
+Symptoms:
+Users connected to VLAN 10 reported slow access to internal applications and shared resources. Increased latency observed when pinging internal servers.
+
+Investigation Steps:
+1. Verified user subnet (192.168.10.0/24) connectivity
+2. Checked switch interface utilization on Core Switch SW-01
+3. Reviewed VLAN routing configuration
+4. Tested connectivity to Domain Controller (192.168.20.11)
+5. Identified intermittent packet loss on corporate VLAN interface
+
+Root Cause:
+Network misconfiguration affecting VLAN 10 routing path.
+
+Resolution:
+Corrected VLAN routing configuration on core switch and verified stable connectivity between corporate subnet and server subnet.
+
+Time to Resolve:
+18 minutes
 ## Incident Management Example
 
 The NOC platform allows incidents to be reported, categorized by OSI layer, and tracked through investigation and resolution.
