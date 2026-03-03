@@ -47,6 +47,12 @@ This segmentation improves security, traffic management, and operational monitor
 The following diagram represents the simulated enterprise network architecture used in this Network Operations Center (NOC) environment. The design demonstrates VLAN segmentation, centralized switching, and perimeter firewall protection.
 
 ![Network Topology](screenshots/network-topology.png)
+## Multi-Site Topology
+
+The Horizon Freight environment supports multi-site connectivity between headquarters and branch locations.  
+Branch offices securely connect to the main network through encrypted site-to-site VPN tunnels.
+
+![Multi Site Topology](screenshots/multi-site-topology.png)
 
 ## Network Traffic Flow
 
