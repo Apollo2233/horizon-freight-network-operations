@@ -18,6 +18,24 @@ This project simulates a Network Operations Center (NOC) environment for Horizon
 ---
 
 ## 🌐 Network Architecture
+## IP & VLAN Management
+
+The NOC platform includes centralized IP addressing and VLAN management to maintain clear network segmentation across the Horizon Freight infrastructure.
+
+![IP & VLAN Management](screenshots/ip-vlan-management.png)
+
+### VLAN Structure
+
+| VLAN | Purpose | Subnet |
+|-----|--------|--------|
+| 10 | Corporate Users | 192.168.10.0/24 |
+| 20 | Servers | 192.168.20.0/24 |
+| 30 | VoIP | 192.168.30.0/24 |
+| 40 | Guest WiFi | 192.168.40.0/24 |
+| 99 | Network Management | 192.168.99.0/24 |
+
+Each subnet is associated with a dedicated gateway and DHCP configuration where appropriate.  
+This segmentation improves security, traffic management, and operational monitoring across the environment.
 ## Network Topology
 
 The following diagram represents the simulated enterprise network architecture used in this Network Operations Center (NOC) environment. The design demonstrates VLAN segmentation, centralized switching, and perimeter firewall protection.
