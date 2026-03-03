@@ -48,14 +48,28 @@ The following diagram represents the simulated enterprise network architecture u
 
 ![Network Topology](screenshots/network-topology.png)
 
-### VLAN Segmentation
-| VLAN | Purpose        | Subnet            |
-|------|---------------|------------------|
-| 10   | Corporate     | 192.168.10.0/24  |
-| 20   | Servers       | 192.168.20.0/24  |
-| 30   | VoIP          | 192.168.30.0/24  |
-| 40   | Guest WiFi    | 192.168.40.0/24  |
-| 99   | Management    | 192.168.99.0/24  |
+## Network Traffic Flow
+
+The Horizon Freight infrastructure follows a layered enterprise network design to provide segmentation, security, and efficient traffic management across the environment.
+
+### Traffic Flow Overview
+
+1. User devices connect to access switches within **VLAN 10 (Corporate Users)**.
+
+2. Inter-VLAN routing occurs at the **core switch**, allowing communication between segmented networks when required.
+
+3. Internal services such as **Active Directory, DNS, DHCP, and file services** reside in **VLAN 20 (Servers)**.
+
+4. Voice communications operate within **VLAN 30 (VoIP)** to ensure traffic isolation and maintain quality of service.
+
+5. Guest wireless users connect to **VLAN 40 (Guest WiFi)**, which is isolated from internal resources for security.
+
+6. Network infrastructure devices such as switches, firewalls, and monitoring systems operate within **VLAN 99 (Management)** to allow secure administrative access.
+
+### External Connectivity
+
+All outbound and inbound traffic passes through the **Fortinet Edge Firewall**, where security policies, NAT rules, and VPN access controls are enforced.
+Remote users securely access internal services through a **VPN connection terminating at the firewall**, allowing authorized connectivity to corporate resources while maintaining network security.
 
 ---
 
