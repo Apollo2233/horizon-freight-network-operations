@@ -18,6 +18,12 @@ This project simulates a Network Operations Center (NOC) environment for Horizon
 ---
 
 ## 🌐 Network Architecture
+## Network Topology
+
+The following diagram represents the simulated enterprise network architecture used in this Network Operations Center (NOC) environment. The design demonstrates VLAN segmentation, centralized switching, and perimeter firewall protection.
+
+![Network Topology](screenshots/network-topology.png)
+
 ### VLAN Segmentation
 | VLAN | Purpose        | Subnet            |
 |------|---------------|------------------|
